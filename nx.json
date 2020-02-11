@@ -1,0 +1,22 @@
+{
+  "npmScope": "steyer-shell-variation",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "airline-admin-web-app": {
+      "tags": []
+    },
+    "airline-admin-web-app-e2e": {
+      "tags": [],
+      "implicitDependencies": ["airline-admin-web-app"]
+    }
+  }
+}
