@@ -17,6 +17,33 @@
     "airline-admin-web-app-e2e": {
       "tags": [],
       "implicitDependencies": ["airline-admin-web-app"]
+    },
+    "booking-shell": {
+      "tags": ["type:shell", "scope:booking"]
+    },
+    "booking-feature-passenger-info": {
+      "tags": ["type:feature", "scope:booking"]
+    },
+    "booking-feature-seat-listing": {
+      "tags": ["type:feature", "scope:booking"]
+    },
+    "check-in-shell": {
+      "tags": ["type:shell", "scope:check-in"]
+    },
+    "check-in-feature-ticket-finder": {
+      "tags": ["type:feature", "scope:check-in"]
+    },
+    "check-in-feature-check-in-info": {
+      "tags": ["type:feature", "scope:check-in"]
+    },
+    "flight-tracking-shell": {
+      "tags": ["type:shell", "scope:flight-tracking"]
+    },
+    "flight-tracking-feature-flight-search": {
+      "tags": ["type:feature", "scope:flight-tracking"]
+    },
+    "flight-tracking-feature-flight-details": {
+      "tags": ["type:feature", "scope:flight-tracking"]
     }
   }
 }

@@ -15,7 +15,35 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@steyer-shell-variation/booking/shell": [
+        "libs/booking/shell/src/index.ts"
+      ],
+      "@steyer-shell-variation/booking/feature-passenger-info": [
+        "libs/booking/feature-passenger-info/src/index.ts"
+      ],
+      "@steyer-shell-variation/booking/feature-seat-listing": [
+        "libs/booking/feature-seat-listing/src/index.ts"
+      ],
+      "@steyer-shell-variation/check-in/shell": [
+        "libs/check-in/shell/src/index.ts"
+      ],
+      "@steyer-shell-variation/check-in/feature-ticket-finder": [
+        "libs/check-in/feature-ticket-finder/src/index.ts"
+      ],
+      "@steyer-shell-variation/check-in/feature-check-in-info": [
+        "libs/check-in/feature-check-in-info/src/index.ts"
+      ],
+      "@steyer-shell-variation/flight-tracking/shell": [
+        "libs/flight-tracking/shell/src/index.ts"
+      ],
+      "@steyer-shell-variation/flight-tracking/feature-flight-search": [
+        "libs/flight-tracking/feature-flight-search/src/index.ts"
+      ],
+      "@steyer-shell-variation/flight-tracking/feature-flight-details": [
+        "libs/flight-tracking/feature-flight-details/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

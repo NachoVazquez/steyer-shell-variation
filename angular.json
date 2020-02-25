@@ -126,6 +126,303 @@
           }
         }
       }
+    },
+    "booking-shell": {
+      "projectType": "library",
+      "root": "libs/booking/shell",
+      "sourceRoot": "libs/booking/shell/src",
+      "prefix": "aad",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/booking/shell/tsconfig.lib.json",
+              "libs/booking/shell/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/booking/shell/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/booking/shell/jest.config.js",
+            "tsConfig": "libs/booking/shell/tsconfig.spec.json",
+            "setupFile": "libs/booking/shell/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
+    },
+    "booking-feature-passenger-info": {
+      "projectType": "library",
+      "root": "libs/booking/feature-passenger-info",
+      "sourceRoot": "libs/booking/feature-passenger-info/src",
+      "prefix": "aad",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/booking/feature-passenger-info/tsconfig.lib.json",
+              "libs/booking/feature-passenger-info/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/booking/feature-passenger-info/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/booking/feature-passenger-info/jest.config.js",
+            "tsConfig": "libs/booking/feature-passenger-info/tsconfig.spec.json",
+            "setupFile": "libs/booking/feature-passenger-info/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
+    },
+    "booking-feature-seat-listing": {
+      "projectType": "library",
+      "root": "libs/booking/feature-seat-listing",
+      "sourceRoot": "libs/booking/feature-seat-listing/src",
+      "prefix": "aad",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/booking/feature-seat-listing/tsconfig.lib.json",
+              "libs/booking/feature-seat-listing/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/booking/feature-seat-listing/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/booking/feature-seat-listing/jest.config.js",
+            "tsConfig": "libs/booking/feature-seat-listing/tsconfig.spec.json",
+            "setupFile": "libs/booking/feature-seat-listing/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
+    },
+    "check-in-shell": {
+      "projectType": "library",
+      "root": "libs/check-in/shell",
+      "sourceRoot": "libs/check-in/shell/src",
+      "prefix": "aad",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/check-in/shell/tsconfig.lib.json",
+              "libs/check-in/shell/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/check-in/shell/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/check-in/shell/jest.config.js",
+            "tsConfig": "libs/check-in/shell/tsconfig.spec.json",
+            "setupFile": "libs/check-in/shell/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
+    },
+    "check-in-feature-ticket-finder": {
+      "projectType": "library",
+      "root": "libs/check-in/feature-ticket-finder",
+      "sourceRoot": "libs/check-in/feature-ticket-finder/src",
+      "prefix": "aad",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/check-in/feature-ticket-finder/tsconfig.lib.json",
+              "libs/check-in/feature-ticket-finder/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/check-in/feature-ticket-finder/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/check-in/feature-ticket-finder/jest.config.js",
+            "tsConfig": "libs/check-in/feature-ticket-finder/tsconfig.spec.json",
+            "setupFile": "libs/check-in/feature-ticket-finder/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
+    },
+    "check-in-feature-check-in-info": {
+      "projectType": "library",
+      "root": "libs/check-in/feature-check-in-info",
+      "sourceRoot": "libs/check-in/feature-check-in-info/src",
+      "prefix": "aad",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/check-in/feature-check-in-info/tsconfig.lib.json",
+              "libs/check-in/feature-check-in-info/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/check-in/feature-check-in-info/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/check-in/feature-check-in-info/jest.config.js",
+            "tsConfig": "libs/check-in/feature-check-in-info/tsconfig.spec.json",
+            "setupFile": "libs/check-in/feature-check-in-info/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
+    },
+    "flight-tracking-shell": {
+      "projectType": "library",
+      "root": "libs/flight-tracking/shell",
+      "sourceRoot": "libs/flight-tracking/shell/src",
+      "prefix": "aad",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/flight-tracking/shell/tsconfig.lib.json",
+              "libs/flight-tracking/shell/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/flight-tracking/shell/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/flight-tracking/shell/jest.config.js",
+            "tsConfig": "libs/flight-tracking/shell/tsconfig.spec.json",
+            "setupFile": "libs/flight-tracking/shell/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
+    },
+    "flight-tracking-feature-flight-search": {
+      "projectType": "library",
+      "root": "libs/flight-tracking/feature-flight-search",
+      "sourceRoot": "libs/flight-tracking/feature-flight-search/src",
+      "prefix": "aad",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/flight-tracking/feature-flight-search/tsconfig.lib.json",
+              "libs/flight-tracking/feature-flight-search/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/flight-tracking/feature-flight-search/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/flight-tracking/feature-flight-search/jest.config.js",
+            "tsConfig": "libs/flight-tracking/feature-flight-search/tsconfig.spec.json",
+            "setupFile": "libs/flight-tracking/feature-flight-search/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
+    },
+    "flight-tracking-feature-flight-details": {
+      "projectType": "library",
+      "root": "libs/flight-tracking/feature-flight-details",
+      "sourceRoot": "libs/flight-tracking/feature-flight-details/src",
+      "prefix": "aad",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/flight-tracking/feature-flight-details/tsconfig.lib.json",
+              "libs/flight-tracking/feature-flight-details/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/flight-tracking/feature-flight-details/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/flight-tracking/feature-flight-details/jest.config.js",
+            "tsConfig": "libs/flight-tracking/feature-flight-details/tsconfig.spec.json",
+            "setupFile": "libs/flight-tracking/feature-flight-details/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
     }
   },
   "cli": {
