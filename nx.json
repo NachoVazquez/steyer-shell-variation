@@ -44,6 +44,13 @@
     },
     "flight-tracking-feature-flight-details": {
       "tags": ["type:feature", "scope:flight-tracking"]
+    },
+    "airline-client-web-app": {
+      "tags": []
+    },
+    "airline-client-web-app-e2e": {
+      "tags": [],
+      "implicitDependencies": ["airline-client-web-app"]
     }
   }
 }

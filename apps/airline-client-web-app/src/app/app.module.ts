@@ -1,15 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
+import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'booking',
+    path: 'flight-tracking',
     loadChildren: () =>
-      import('@steyer-shell-variation/booking/shell').then(
-        m => m.BookingShellModule
+      import('@steyer-shell-variation/flight-tracking/shell').then(
+        m => m.FlightTrackingShellModule
       )
   },
   {
