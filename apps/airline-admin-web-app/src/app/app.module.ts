@@ -5,8 +5,8 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { TranslocoConfigModule } from '@steyer-shell-variation/shared/utils-transloco-config';
 
-import { AppComponent } from './app.component';
 import { environment } from '../environments/environment';
+import { AppComponent } from './app.component';
 
 const routes: Routes = [
   {
