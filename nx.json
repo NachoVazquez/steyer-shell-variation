@@ -51,6 +51,9 @@
     "airline-client-web-app-e2e": {
       "tags": [],
       "implicitDependencies": ["airline-client-web-app"]
+    },
+    "shared-utils-transloco-config": {
+      "tags": ["scope:shared", "type:utils"]
     }
   }
 }

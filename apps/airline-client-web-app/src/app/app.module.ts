@@ -1,8 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
+
+import { TranslocoConfigModule } from '@steyer-shell-variation/shared/utils-transloco-config';
+
+import { environment } from '../environments/environment';
+import { AppComponent } from './app.component';
 
 const routes: Routes = [
   {
@@ -23,8 +27,12 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, RouterModule.forRoot(routes)],
-  providers: [],
+  imports: [
+    BrowserModule,
+    RouterModule.forRoot(routes),
+    HttpClientModule,
+    TranslocoConfigModule.forRoot(environment.production)
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

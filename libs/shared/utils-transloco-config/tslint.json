@@ -1,0 +1,17 @@
+{
+  "extends": "../../../tslint.json",
+  "rules": {
+    "directive-selector": [
+      true,
+      "attribute",
+      "steyerShellVariation",
+      "camelCase"
+    ],
+    "component-selector": [
+      true,
+      "element",
+      "steyer-shell-variation",
+      "kebab-case"
+    ]
+  }
+}

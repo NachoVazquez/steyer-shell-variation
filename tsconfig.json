@@ -42,6 +42,9 @@
       ],
       "@steyer-shell-variation/flight-tracking/feature-flight-details": [
         "libs/flight-tracking/feature-flight-details/src/index.ts"
+      ],
+      "@steyer-shell-variation/shared/utils-transloco-config": [
+        "libs/shared/utils-transloco-config/src/index.ts"
       ]
     }
   },
